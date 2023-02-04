@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SRS Install
+Comment=
+Exec=/home/srsuser/srs-install.sh
+Icon=
+Path=/home/srsuser
+Terminal=true
+StartupNotify=false

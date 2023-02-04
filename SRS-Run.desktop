@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SRS Run
+Comment=
+Exec=/home/srsuser/srs-run.sh
+Icon=
+Path=/home/srsuser
+Terminal=true
+StartupNotify=false
