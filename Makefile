@@ -1,5 +1,5 @@
 build:
-	docker build -t srs-docker .
+	docker build -t deephack/srs-docker .
 
 run:
 	docker run \
@@ -11,4 +11,7 @@ run:
 	-p 5002:5002/tcp \
 	-p 5002:5002/udp \
 	-v /dev/shm:/dev/shm  \
-	--name srsserver srs-docker:latest
+	--name srsserver deephack/srs-docker:latest
+
+push:
+  docker push deephack/srs-docker:latest
