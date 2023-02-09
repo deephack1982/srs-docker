@@ -4,12 +4,7 @@ if [ -n "$VNC_PASSWORD" ]; then
     echo -n "$VNC_PASSWORD" > /.password1
     x11vnc -storepasswd $(cat /.password1) /.password2
     chmod 400 /.password*
-    sed -i 's/^command=x11vnc.*/& -rfbauth \/.password2/' /etc/supervisor/supervisord.conf
     export VNC_PASSWORD=
-fi
-
-if [ -n "$RESOLUTION" ]; then
-    sed -i "s/1024x768/$RESOLUTION/" /usr/local/bin/xvfb.sh
 fi
 
 USER=${USER:-root}
